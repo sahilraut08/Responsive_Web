@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.content-one{
+    background-image: url(images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 80vh;
+    margin-bottom: 0;
+}
+
+.logo{
+    margin-top: 1em;
+    margin-left: 1em;
+    max-width: 200px;
+}
+
+.navbar{
+    margin: 0 1em;
+    max-width: 1050px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 1em;
+}
+
+.section-one{
+    margin: 1em 1em;
+}
+
+.title{
+    font-weight: 900;
+    color: #FFF;
+}
+
+.title span{
+    display: block;
+    font-weight: 300;
+}
+
+.button {
+	display: inline-block;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: .5em 1.75em;
+}
+
+.button-one{
+    margin-top: 2em;
+    color: #00ff6c;
+	border-color: #00ff6c;
+}
+
+.button-one:hover{
+    background-color: #00ff6c;
+    color: black;
+}
+
+.about{
+    background-color: #232323;
+    max-width: 480px;
+    height: auto;
+    padding: 4em;
+    outline: 2px solid #00ff6c;
+	outline-offset: -2em;
+    color: #FFF;
+    position: relative;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.about h2{
+    color: #00ff6c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -0.25em;
+    background-color: #232323;
+    padding: 0.14em;
+}
+
+.line{
+    margin: 1em 0 0.75em;
+    position: relative;
+}
+
+.line::before{
+    content: '';
+    width: 8em;
+    background-color: #00ff6c;
+    border: 1.5px solid #00ff6c;
+    position: absolute;
+    top: -0.35em;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.port-item {
+	margin: 0;
+	position: relative;
+}
+
+.port-item img {
+	display: block;
+}
+
+.port-desc {
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	color: white;
+	background: rgba(0,0,0,.6);
+	padding-bottom: 2em;
+}
+
+.port-desc p {
+	margin: 1em;
+}
+
+.button-small {
+	font-size: .7rem;
+	font-weight: 700;
+	color: #00ff6c;
+	border-color: #00ff6c;
+
+}
+
+.button-small:hover{
+	background: #00ff6c;
+	color: #232323;
+}
+
+
+.content-four{
+    background-color: #00ff6c;
+    padding: 4em 1em;
+}
+
+.content-four h1{
+    color: #232323;
+}
+
+.button-dark {
+	color: #232323;
+	border-color: #232323;
+}
+
+.button-dark:hover{
+	background: #232323;
+	color: #00ff6c;
+}
+
+.footer {
+	background-color: #232323;
+	color: #fff;
+	text-align: left;
+    padding: 2em 0;
+}
+.col-3{
+    margin-top: 0;
+    display: block;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    padding: 0 2em;
+    max-width: 800px;
+}
+
+.final{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-1{
+    padding: 0em 1em;
+}
+
+
+.col-1 li{
+    padding: 0.5em 0;
+}
+
+
+
+@media (min-width: 30em) {
+
+    .portfolio{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+    }
+
+    .button-one{
+        margin-top: 0em;
+    }
+
+    .who-we-are{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(images/who-we-are.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .about{
+        top: -5em;
+        margin-left: -0.5em;
+
+    }
+}
+
+
+@media (min-width: 45em) {
+    
+    body{
+        font-size: 18px;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .menu{
+        padding-top: 1em;
+    }
+
+    .content-one{
+        height: 450px;
+    }
+    
+    .section-one{
+        margin-top: 2em;
+    }
+
+    .button-one{
+        margin: 1em 0;
+    }
+
+    .portfolio{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+
+@media (max-width:24em) {
+    body{
+        font-size: 14px;
+    }
+
+    .content-one{
+        height: 400px;
+    }
+
+    .button-one{
+        margin-top: 1em;
+    }
+}
